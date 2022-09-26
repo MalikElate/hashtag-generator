@@ -1,18 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { connect } from 'react-redux'; 
+import { useSelector} from 'react-redux';
+import './GenerateButton.css';
 
 function GenerateButton() {
+    const generateInput = useSelector((state) => state.generateInput.generateInput)
+    
     const handleInput = () => {
-        setCount(input + 1);
-        console.log(input);
+        console.log(generateInput);
     }
-    const [input, setCount] = useState(0);
-
 
     return (
-        <div className="App">
-            <button onClick={handleInput}>Click me</button>
-        </div>
+            <button
+                className='generateButton'
+                onClick={handleInput}>Generate Hashtags
+            </button>
     );
 }
-
-export default GenerateButton;
+const putReduxStateOnProps = ( reduxState) => ({ 
+    reduxState
+  })
+  
+export default connect(putReduxStateOnProps)(GenerateButton) 

@@ -1,0 +1,7 @@
+.app-heaader { 
+    font: "Klavika"; 
+    color: white; 
+    font-weight: bold;
+    background-color: rgb(15, 79, 181);
+    padding: 15px; 
+}
