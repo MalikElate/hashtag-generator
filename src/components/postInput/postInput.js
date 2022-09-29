@@ -11,12 +11,12 @@ function PostInput() {
   });
 
   return (
-    <textarea
+    <input
       className='generateInput'
-      placeholder='enter your linkedin post here'
-      maxLength="700"
+      placeholder='enter a keyword here, for example, software engineering or accounting '
+      maxLength="25"
       onChange={e => { setInput(e.target.value) }}
-    ></textarea>
+    ></input>
   );
 }
 

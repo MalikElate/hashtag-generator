@@ -1,17 +1,17 @@
-import './App.css';
+import '../App/App.css';
 import React from 'react';
 import PostInput from '../postInput/postInput';
 import GenerateButton from '../GenerateButton/generateButton'; 
-import Header from '../Header/header'
 
-function App() {
+function Home() {
   return (
     <div className="App">
-      <Header/>
-      <PostInput/>
-      <GenerateButton/>
-    </div>
+        <div className='App-Content'>
+            <PostInput/>
+            <GenerateButton/>
+        </div>
+    </div> 
   );
 }
 
-export default App;
+export default Home;

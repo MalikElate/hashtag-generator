@@ -1,7 +1,21 @@
-.generateButton{
-    color: red;
+.generateButtonInvalid{
     padding: 10px;
     border-radius: 100px;
     border: solid 1px rgb(200, 200, 200);
+    font: "Klavika"; 
+    color: grey; 
+    font-weight: bold;
+    margin: 10px; 
+}
 
+.generateButtonValid{
+    padding: 10px;
+    border-radius: 100px;
+    border: solid 1px rgb(200, 200, 200);
+    font: "Klavika"; 
+    color: grey; 
+    font-weight: bold;
+    margin: 10px; 
+    background-color: #0072b1;
+    color: white; 
 }

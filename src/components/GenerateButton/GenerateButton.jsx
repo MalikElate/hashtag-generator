@@ -7,12 +7,12 @@ function GenerateButton() {
     const generateInput = useSelector((state) => state.generateInput.generateInput)
     
     const handleInput = () => {
-        console.log(generateInput);
+        console.log(generateInput); 
     }
 
     return (
             <button
-                className='generateButton'
+                className={generateInput == ''? 'generateButtonInvalid' : 'generateButtonValid'}
                 onClick={handleInput}>Generate Hashtags
             </button>
     );
