@@ -3,8 +3,18 @@
   color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .App-Content { 
+  flex-direction: column;
+  flex-direction: column;
+  max-width: 400px;
   display: flex;
   flex-direction: inline;
+}
+.about-p { 
+  margin: 10px;
+  font-size: small;
+  color: black; 
 }

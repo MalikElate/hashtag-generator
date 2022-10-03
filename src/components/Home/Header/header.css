@@ -1,0 +1,21 @@
+.Header-p { 
+    display: inline;
+    font-size: larger;
+}
+.Header-p-logo { 
+    display: inline;
+    background-color: #0072b1;
+    border-radius: 2px;
+    padding: 1px; 
+}
+.Header-p-normal { 
+    display: inline;
+    color: #0072b1;
+}
+.app-heaader { 
+    font: "Klavika"; 
+    color: white; 
+    font-weight: bold;
+    background: none;
+    padding: 15px; 
+}
