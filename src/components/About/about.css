@@ -1,3 +1,9 @@
-.results-p { 
-    margin: 10px;
+.about-ul { 
+    font-size: 16px;
+    color: black; 
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #dddddd;
+    padding-top: 10px;
+    padding-bottom: 10px; 
 }

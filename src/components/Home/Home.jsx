@@ -1,8 +1,6 @@
 import '../App/App.css';
 import React from 'react';
-import PostInput from '../postInput/postInput';
-import Results from '../Results/Results'; 
-import GenerateButton from '../GenerateButton/GenerateButton'; 
+import LoginButton from '../LoginButton/LoginButton'; 
 import About from '../About/About'; 
 import Header from './Header/header'; 
 
@@ -12,9 +10,7 @@ function Home() {
       <div className="App-Content">
         <Header/>
         <About/>
-        <PostInput/>
-        <GenerateButton/>
-        <Results/>
+        <LoginButton/>
       </div> 
     </div> 
   );

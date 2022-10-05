@@ -4,10 +4,11 @@ import './about.css';
 
 function About() {
     return (
-            <p className='about-p'>
-                More impressions means better results from linkedin. Use enter a freecreatortools.com 
-                to increase your post impressions 
-            </p>
+            <ul className='about-ul'>
+                <li>Expert users, or users who frequent your website or use your product</li>
+                <li>Expert users, or users who frequent your website or use your product</li>
+                <li>Expert users, or users who frequent your website or use your product</li>
+            </ul>
     );
 }
 const putReduxStateOnProps = ( reduxState) => ({ 
