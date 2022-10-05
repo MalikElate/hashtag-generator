@@ -1,19 +1,16 @@
-import '../App/App.css';
 import React from 'react';
-import LoginButton from '../LoginButton/LoginButton'; 
-import About from '../About/About'; 
-import Header from './Header/header'; 
+import { connect } from 'react-redux'; 
+import './home.css';
 
 function Home() {
-  return (
-    <div className="App">
-      <div className="App-Content">
-        <Header/>
-        <About/>
-        <LoginButton/>
-      </div> 
-    </div> 
-  );
-}
-
-export default Home;
+    return (
+            <p style={{fontSize: 64} }>
+                wassup bitches
+            </p>
+    );
+}   
+const putReduxStateOnProps = ( reduxState) => ({ 
+    reduxState
+  })
+  
+export default connect(putReduxStateOnProps)(Home) 

@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'; 
 import './LoginButton.css';
 
-function GenerateButton() {
+function LoginButton() {
     
     const handleInput = (e) => {
         e.preventDefault();
@@ -20,4 +20,4 @@ const putReduxStateOnProps = ( reduxState) => ({
     reduxState
   })
   
-export default connect(putReduxStateOnProps)(GenerateButton) 
+export default connect(putReduxStateOnProps)(LoginButton) 

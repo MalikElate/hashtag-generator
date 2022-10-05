@@ -1,7 +1,9 @@
 import './App.css';
 import React from 'react';
-import Home from '../Home/Home'; 
+import Landing from '../Landing/Landing'; 
 import Footer from '../Footer/Footer';
+import Header from '../Header/header';
+import Home from '../Home/Home'
 import {
   HashRouter as Router,
   Route,
@@ -10,15 +12,26 @@ import {
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route
-         path='/'
-         element={<Home/>}
-        />
-      </Routes>
-      <Footer/>
-    </Router>
+    <div className="App">
+      <div className="App-Content">
+        <Header/>
+        <Router>
+          <Routes>
+            <Route
+            exact
+            path='/'
+            element={<Landing/>}
+            />
+             <Route
+            exact
+            path='/home'
+            element={<Home/>}
+            />
+          </Routes>
+          <Footer/>
+        </Router>
+      </div> 
+    </div> 
   );
 }
 
