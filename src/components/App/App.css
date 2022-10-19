@@ -5,14 +5,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px; 
 }
 .App-Content { 
   flex-direction: column;
-  flex-direction: column;
+  gap: 8px; 
   max-width: 400px;
   display: flex;
-  flex-direction: inline;
 }
 .about-p { 
   margin: 10px;

@@ -1,14 +1,11 @@
 .generateInput{
-    /* width: 90%;  */
-    margin: 10px; 
     padding: 10px;
-    line-height: 1em;
     font-family: Sans-Serif;
     border: solid 1px rgb(200, 200, 200);
-    border-radius: 10px;
+    border-radius: 6px;
     resize: none;
     display:block;
-    flex-grow: .5; 
+    flex-grow: 1; 
 }
 .generateInput:focus {
     outline-width: 0;

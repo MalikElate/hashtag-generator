@@ -4,9 +4,11 @@ import './about.css';
 
 function About() {
     return (
+
             <ul className='about-ul'>
-                <li>Expert users, or users who frequent your website or use your product</li>
-                <li>Expert users, or users who frequent your website or use your product</li>
+                <h4 className='about-ul-header'>How to use this app</h4>
+                <li>Enter a the job title or industry you want your post to target for example Salesperson</li>
+                <li>Generate </li>
                 <li>Expert users, or users who frequent your website or use your product</li>
             </ul>
     );

@@ -13,7 +13,7 @@ function PostInput() {
   return (
     <input
       className='generateInput'
-      placeholder='enter a keyword here, for example, software engineering or accounting '
+      placeholder='job title you want e.g. accountant'
       maxLength="25"
       onChange={e => { setInput(e.target.value) }}
     ></input>

@@ -6,7 +6,11 @@
     display: inline;
     background-color: #0072b1;
     border-radius: 2px;
-    padding: 1px; 
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 2px;
 }
 .Header-p-normal { 
     display: inline;

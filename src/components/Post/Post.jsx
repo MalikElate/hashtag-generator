@@ -8,7 +8,7 @@ function Post() {
     return (
             <div className='post-div'>
                 <img src={personImage} alt="horse" className="post-person-img" />
-                <p className='post-p'>Expert users, or users who frequent your website or use your product</p>
+                <p className='post-p'>using the right LinkedIn hashtags helps you get views. But it can also help you build connections</p>
                 <img src={footerImage} alt="horse" className="post-person-img" />
             </div>
     );
