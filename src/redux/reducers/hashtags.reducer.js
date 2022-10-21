@@ -1,6 +1,6 @@
-const generateInput = (state = '', action) => {
+const hashtags = (state = [], action) => {
     switch (action.type) {
-      case 'SET_GENERATE_INPUT':
+      case 'SET_HASHTAGS':
         state = action.payload; 
         return action.payload;
       default:
@@ -8,4 +8,4 @@ const generateInput = (state = '', action) => {
     }
   };
   
-  export default generateInput;
+  export default hashtags;

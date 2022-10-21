@@ -1,3 +1,17 @@
+.generate-form { 
+    display: flex;
+    gap: 8px; 
+}
+.login-button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none; 
+    background-color: #0072b1;
+    font: "Klavika"; 
+    color: white; 
+    font-weight: bold;
+}
+
 .generateInput{
     padding: 10px;
     font-family: Sans-Serif;
@@ -10,4 +24,3 @@
 .generateInput:focus {
     outline-width: 0;
 }
-
