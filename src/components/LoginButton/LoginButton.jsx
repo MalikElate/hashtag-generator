@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { connect, useDispatch } from 'react-redux'; 
 import './LoginButton.css';
 import axios from 'axios'; 
@@ -12,7 +12,7 @@ function LoginButton() {
     params: {keyword: 'travel'},
     headers: {
         'X-RapidAPI-Key': process.env.REACT_APP_HASHTAG_API_KEY,
-        'X-RapidAPI-Host': 'hashtagy-generate-hashtags.p.rapidapi.com'
+        'X-RapidAPI-Host': process.env.REACT_APP_HASHTAG_API_URL
         }
     };
     
@@ -21,9 +21,10 @@ function LoginButton() {
     const handleInput = (e) => {
         e.preventDefault();
         console.log("send request with options:", options); 
-        dispatch({ type: 'SET_GENERATE_INPUT', payload: options }); 
+
         // axios.request(options).then(function (response) {
-        //     console.log(response.data);
+        //     console.log(response.data.data.best_30_hashtags.hashtags);
+        //     dispatch({ type: 'SET_GENERATE_INPUT', payload: response.data.data.best_30_hashtags.hashtags }); 
         // }).catch(function (error) {
         //     console.error(error);
         // });

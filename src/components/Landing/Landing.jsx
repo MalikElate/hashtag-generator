@@ -4,6 +4,7 @@ import LoginButton from '../LoginButton/LoginButton';
 import PostInput from '../PostInput/PostInput'; 
 import About from '../About/About'; 
 import Post from '../Post/Post'; 
+import Hashtags from '../Hashtags/Hashtags'; 
 import './landing.css'
 
 function Landing() {
@@ -14,6 +15,7 @@ function Landing() {
         <PostInput/>
         <LoginButton/>
       </div>
+      <Hashtags/>
       <About/>
     </>
   );

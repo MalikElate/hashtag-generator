@@ -1,4 +1,4 @@
-const generateInput = (state = {}, action) => {
+const generateInput = (state = [], action) => {
     switch (action.type) {
       case 'SET_GENERATE_INPUT':
         state = action.payload; 

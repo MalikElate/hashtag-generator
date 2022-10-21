@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useState } from 'react';
 import './postInput.css';
+import { connect, useDispatch } from 'react-redux'; 
 
 function PostInput() {
   const [input, setInput] = useState("");
-  const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch({ type: 'SET_GENERATE_INPUT', payload: { generateInput: input } })
-  });
+  const dispatch = useDispatch(); 
+
+  const onChange = () => { 
+    console.log(input); 
+  }
 
   return (
     <input
@@ -20,4 +21,8 @@ function PostInput() {
   );
 }
 
-export default PostInput;
+const putReduxStateOnProps = ( reduxState) => ({ 
+  reduxState
+})
+
+export default connect(putReduxStateOnProps)(PostInput) 
