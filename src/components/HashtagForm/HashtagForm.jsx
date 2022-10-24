@@ -34,8 +34,8 @@ function HashtagForm() {
         <div className="generate-form">
             <input
                 className='generateInput'
-                placeholder='job title you want e.g. accountant'
-                maxLength="25"
+                placeholder='job title or industry'
+                // maxLength="25"
                 value = {input}
                 onChange={ (e) => setInput(e.target.value) }
             ></input>

@@ -9,10 +9,10 @@ import './landing.css'
 function Landing() {
   return (
     <>
-      <Post/>
+      {/* <Post/> */}
+      <About/>
       <HashtagForm/>
       <Hashtags/>
-      <About/>
     </>
   );
 }

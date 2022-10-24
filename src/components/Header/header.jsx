@@ -2,10 +2,8 @@ import './header.css'
 
 function Header () {
   return (
-    <header className='app-heaader'>
-      <p className='Header-p Header-p-normal'>Linked</p>
-      <p className='Header-p Header-p-logo'>in</p>
-      <p className='Header-p Header-p-normal'> Hashtags</p>
+    <header>
+      <h1 className='header-p'>Linkedin Hashtags</h1>
     </header>
   );
 }

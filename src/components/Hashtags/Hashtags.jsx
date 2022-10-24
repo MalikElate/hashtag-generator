@@ -2,20 +2,28 @@ import React from 'react';
 import { connect, useSelector } from 'react-redux';
 import './hashtags.css';
 
+import { MdOutlineContentCopy } from 'react-icons/md';
+function Question() {
+  return(
+    <h3> Lets go for a <MdOutlineContentCopy />? </h3>
+  ) 
+}
+
 function Hashtags() {
-  const hashtags = useSelector((state) => state.generateInput);
-  console.log(hashtags)
+  const hashtags = useSelector((state) => state.hashtags);
   return (
-    <div>
+    <section>
       {hashtags ?
-        hashtags.map((info, i) =>
-          <div className='pricing-box' key={i}>
-            {info}
-          </div>
-          
+        hashtags.slice(0, 5).map((hashtag, i) =>
+          <p 
+            className='hashtag-p' key={i}
+            onClick={() => {navigator.clipboard.writeText(hashtag)}}
+          >
+            #{hashtag} <MdOutlineContentCopy />
+          </p>
         )
-        : console.log("test")}
-    </div>
+        : console.log("hello from hashtags.jsx hashtags ? map or this")}
+    </section>
 
   );
 }
