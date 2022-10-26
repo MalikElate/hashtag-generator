@@ -13,6 +13,7 @@ function Hashtags() {
   const hashtags = useSelector((state) => state.hashtags);
   return (
     <section>
+      
       {hashtags ?
         hashtags.slice(0, 5).map((hashtag, i) =>
           <p 
