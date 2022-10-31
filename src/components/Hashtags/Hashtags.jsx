@@ -18,7 +18,7 @@ function Hashtags() {
         hashtags.slice(0, 5).map((hashtag, i) =>
           <p 
             className='hashtag-p' key={i}
-            onClick={() => {navigator.clipboard.writeText(hashtag)}}
+            onClick={() => {navigator.clipboard.writeText(`#${hashtag}`)}}
           >
             #{hashtag} <MdOutlineContentCopy />
           </p>
